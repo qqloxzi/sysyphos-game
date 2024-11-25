@@ -1,0 +1,43 @@
+[orchestration type="OScript" load_steps=5 format=3 uid="uid://db4i17m526ty0"]
+
+[obj type="OScriptFunction" id="OScriptFunction_bo264"]
+guid = "4C0CD853-B6E4-4EC7-AAEF-5E9EB0B4FDE0"
+method = {
+"name": &"NewFunction",
+"args": [{
+"name": &"NewParam",
+"usage": 131078
+}]
+}
+user_defined = true
+id = 0
+
+[obj type="OScriptGraph" id="OScriptGraph_fl8na"]
+graph_name = &"EventGraph"
+flags = 8
+
+[obj type="OScriptGraph" id="OScriptGraph_1suip"]
+graph_name = &"NewFunction"
+flags = 22
+nodes = Array[int]([0])
+functions = Array[int]([0])
+
+[obj type="OScriptNodeFunctionEntry" id="OScriptNodeFunctionEntry_tyfcj"]
+function_id = "4C0CD853-B6E4-4EC7-AAEF-5E9EB0B4FDE0"
+id = 0
+pin_data = Array[Dictionary]([{
+"pin_name": &"ExecOut",
+"dir": 1,
+"flags": 4
+}, {
+"pin_name": &"NewParam",
+"dir": 1,
+"flags": 2,
+"usage": 131078
+}])
+
+[resource]
+base_type = &"CharacterBody2D"
+functions = Array[OScriptFunction]([SubResource("OScriptFunction_bo264")])
+nodes = Array[OScriptNode]([SubResource("OScriptNodeFunctionEntry_tyfcj")])
+graphs = Array[OScriptGraph]([SubResource("OScriptGraph_fl8na"), SubResource("OScriptGraph_1suip")])
